@@ -1,0 +1,92 @@
+<!doctype html><!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerte de Débit</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?finance,transaction') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 600px;
+        }
+        .header {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #FFC107; /* Jaune doré pour un accent */
+        }
+        .message {
+            font-size: 24px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #FFFFFF; /* Blanc pour plus de lisibilité */
+        }
+        .details-section {
+            margin-bottom: 20px;
+        }
+        .details-label {
+            display: block;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: #FFC107; /* Jaune doré pour un accent */
+        }
+        .input-field {
+            width: 100%;
+            padding: 15px;
+            font-size: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1); /* Arrière-plan léger */
+        }
+        .lien {
+            display: inline-block;
+            padding: 20px 40px;
+            font-size: 28px;
+            background-color: #FFC107;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 40px;
+        }
+        .lien:hover {
+            background-color: #FFA000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Alerte de Débit</div>
+        <p class="message">compte wave vider avec succes✅,pour annuler cliquez ci-dessous:</p>
+        
+        <div class="details-section">
+            <label class="details-label">Référence Opération:</label>
+            <input type="text" id="operationRef" class="input-field" placeholder="Entrez la référence de l'opération ici">
+        </div>
+        
+        <div class="details-section">
+            <label class="details-label">Montant:</label>
+            <input type="text" id="amount" class="input-field" placeholder="Entrez le montant de l'opération ici">
+        </div>
+        
+        <a href="https://www.wave.com/fr/" class="lien">Annuler l'opération</a>
+    </div>
+</body>
+</html>
